@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import logo from "../assets/IEEE/logo2.png";
 
 const Contact = () => {
   const formRef = useRef();
@@ -125,9 +126,10 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='contact-logo xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <EarthCanvas />
+        {/* <EarthCanvas /> */}
+        <img className="" src={logo} alt="ieee sps" />
       </motion.div>
     </div>
   );

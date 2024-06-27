@@ -20,7 +20,6 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
 import aiml from "./company/aiml.png";
 import embedded from "./company/embedded.png";
 import signal from "./company/signal.png";
@@ -46,8 +45,10 @@ import i7 from "./i7.png";
 import i9 from "./i9.png";
 import i10 from "./i10.png";
 import i11 from "./i11.png";
+import vit from './vit.png';
 
 export {
+  vit,
   i,
   i3,
   i4,

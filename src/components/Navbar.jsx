@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, vit } from "../assets";
+
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -36,16 +38,23 @@ const Navbar = () => {
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
-          className='flex items-center gap-2'
+          className='flex items-center gap-2 a-head'
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
-        >
+        ><div className="vit-name" >
+          <img className="vit-logo" src={vit} alt="vit logo" />
+          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+           VIT&nbsp;
+            <span className='sm:block hidden text-[#36D81E]'> Vellore</span>
+          </p>
+          </div>
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
            IEEE&nbsp;
             <span className='sm:block hidden text-[#36D81E]'> Signal Processing Society </span>
           </p>
+          
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>

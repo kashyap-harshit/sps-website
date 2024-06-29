@@ -17,8 +17,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div >
-      {/* <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}> */}
+    <motion.div>
       <Tilt
         options={{
           max: 45,
@@ -57,7 +56,7 @@ const ProjectCard = ({
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
-              className={`text-[14px] blue-text-gradient`}
+              className='text-[14px] blue-text-gradient'
             >
               {tag.name}
             </p>
@@ -71,15 +70,10 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
- 
       <motion.div className="center-text">
-        {/* <motion.div variants={textVariant()}> */}
-        <h2 className={`${styles.sectionHeadText}`}>Board </h2>
-        <p className={`${styles.sectionSubText} `}>Year 2024</p>
+        <h2 className={`${styles.sectionHeadText}`}>Board</h2>
+        <p className={`${styles.sectionSubText}`}>Year 2024</p>
       </motion.div>
-
-
-
 
       <div className='f-card mt-20 flex flex-wrap gap-7'>
         {projectsF.map((project, index) => (
@@ -101,6 +95,32 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+
+      {/* Our Sponsors Section */}
+      <section className="mt-16 xl:mt-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-extrabold text-white sm:text-4xl">Our Sponsors</h2>
+          </div>
+          <div className="mt-12 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
+            {/* Example sponsor image */}
+            <div className="flex justify-center items-center mx-auto h-32 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 shadow-lg">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwny9A9CCXsVLcYGZ_z39mqVcuct76SEONDQ&s" alt="Sponsor" className="w-32 h-32 object-cover rounded-full" />
+            </div>
+            <div className="flex justify-center items-center mx-auto h-32 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 shadow-lg">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwny9A9CCXsVLcYGZ_z39mqVcuct76SEONDQ&s" alt="Sponsor" className="w-32 h-32 object-cover rounded-full" />
+            </div>
+            <div className="flex justify-center items-center mx-auto h-32 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 shadow-lg">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwny9A9CCXsVLcYGZ_z39mqVcuct76SEONDQ&s" alt="Sponsor" className="w-32 h-32 object-cover rounded-full" />
+            </div>
+            <div className="flex justify-center items-center mx-auto h-32 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 shadow-lg">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwny9A9CCXsVLcYGZ_z39mqVcuct76SEONDQ&s" alt="Sponsor" className="w-32 h-32 object-cover rounded-full" />
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
     </>
   );
 };

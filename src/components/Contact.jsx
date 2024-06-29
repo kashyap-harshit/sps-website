@@ -7,6 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import logo from "../assets/IEEE/logo2.png";
+import { backend } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();

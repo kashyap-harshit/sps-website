@@ -117,6 +117,7 @@ const Works = () => {
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwny9A9CCXsVLcYGZ_z39mqVcuct76SEONDQ&s" alt="Sponsor" className="w-32 h-32 object-cover rounded-full" />
             </div>
             
+            
           </div>
         </div>
       </section>

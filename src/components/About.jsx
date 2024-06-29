@@ -7,7 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import logo from "../assets/IEEE/logo2.png"
+import logo from "../assets/IEEE/logo2.png";
 
 const ProjectCard = ({
   index,
@@ -95,8 +95,85 @@ const AboutUs = () => {
           publications, conferences, education, and leadership opportunities to
           keep members informed and contribute to society.
         </motion.p>
-        <motion.img variants={fadeIn("", "", 0.1, 1)} className="about-logo" src={logo}/>
+        <motion.img
+          variants={fadeIn("", "", 0.1, 1)}
+          className="about-logo"
+          src={logo}
+          alt="IEEE Logo"
+        />
       </div>
+
+      {/* Testimonials Subsection */}
+      <motion.div variants={textVariant()} className="mt-12">
+        <h2 className={`${styles.sectionHeadText} mb-6`}>Testimonials</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Testimony 1 */}
+          <div className="bg-gray-800 rounded-xl p-6">
+            <p className="text-white text-sm">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat."
+            </p>
+            <p className="text-gray-400 mt-3">- Doraemon</p>
+          </div>
+
+          {/* Testimony 2 */}
+          <div className="bg-gray-800 rounded-xl p-6">
+            <p className="text-white text-sm">
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum."
+            </p>
+            <p className="text-gray-400 mt-3">- Nobita Nobi</p>
+          </div>
+
+          {/* Testimony 3 */}
+          <div className="bg-gray-800 rounded-xl p-6">
+            <p className="text-white text-sm">
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum."
+            </p>
+            <p className="text-gray-400 mt-3">- Shizuka Nobi</p>
+          </div>
+
+          {/* Testimony 4 */}
+          <div className="bg-gray-800 rounded-xl p-6">
+            <p className="text-white text-sm">
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum."
+            </p>
+            <p className="text-gray-400 mt-3">- Degi Sugi </p>
+          </div>
+
+          {/* Testimony 5 */}
+          <div className="bg-gray-800 rounded-xl p-6">
+            <p className="text-white text-sm">
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum."
+            </p>
+            <p className="text-gray-400 mt-3">- Kaminari Uncle</p>
+          </div>
+
+          {/* Testimony 6 */}
+          <div className="bg-gray-800 rounded-xl p-6">
+            <p className="text-white text-sm">
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum."
+            </p>
+            <p className="text-gray-400 mt-3">- Sinchan Nohara</p>
+          </div>
+        </div>
+      </motion.div>
     </>
   );
 };

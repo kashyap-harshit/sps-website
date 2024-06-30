@@ -1,4 +1,15 @@
 import logo from "./logo.svg";
+
+import gallery1 from "./gallery1.jpeg";
+import gallery2 from "./gallery2.jpeg";
+import gallery3 from "./gallery3.jpeg";
+import gallery4 from "./gallery4.jpeg";
+import gallery5 from "./gallery5.jpeg";
+
+import project1 from "./project1.jpeg";
+import project2 from "./project2.jpeg";
+import project3 from "./project3.jpeg";
+
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -64,6 +75,17 @@ export {
   editorialhead,
   financehead,
   projecthead,
+
+  gallery1,
+  gallery2, 
+  gallery3,
+  gallery4,
+  gallery5,
+
+  project1,
+  project2,
+  project3,
+  
   publicityhead,
   technicalhead,
   logo,

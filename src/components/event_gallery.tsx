@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import PhotoAlbum from "react-photo-album";
 import { backend } from "../assets";
+import { gallery1 } from "../assets";
+import { gallery2 } from "../assets";
+import { gallery3 } from "../assets";
+import { gallery4 } from "../assets";
+import { gallery5 } from "../assets";
+import { project1, project2, project3 } from "../assets";
 
 const photos = [
-  { src: backend, width: 800, height: 600 },
-  { src: backend, width: 800, height: 600 },
-  { src: backend, width: 800, height: 600 },
-  { src: backend, width: 800, height: 600 },
-  { src: backend, width: 800, height: 600 },
+  { src: gallery1, width: 800, height: 600 },
+  { src: gallery2, width: 800, height: 600 },
+  { src: gallery3, width: 800, height: 600 },
+  { src: gallery4, width: 800, height: 600 },
+  { src: gallery5, width: 800, height: 600 },
 ];
 
 const Gallery = () => {
@@ -16,24 +22,24 @@ const Gallery = () => {
   const projects = [
     {
       id: 1,
-      name: "Project 1",
+      name: "Wireless Communication Protocol using ESP32 ",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in tortor vestibulum, nec varius leo volutpat.",
-      image: "https://via.placeholder.com/800x600",
+        "This project explores wireless communication protocols using ESP32 microcontrollers. It aims to implement efficient data transfer and connectivity solutions for IoT applications, leveraging ESP32's capabilities.",
+      image: project1,
     },
     {
       id: 2,
-      name: "Project 2",
+      name: "Automated home cleaner",
       description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      image: "https://via.placeholder.com/800x600",
+        "This project pioneers an automated home cleaner employing robotics and AI technologies. Its mission is to optimize convenience through autonomous navigation and cleaning of indoor environments. By integrating advanced smart sensors, the system ensures efficient and effective operation, promising a smarter, cleaner living environment for users.",
+      image: project2,
     },
     {
       id: 3,
-      name: "Project 3",
+      name: "VCheff : Mess Menu FInder",
       description:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-      image: "https://via.placeholder.com/800x600",
+        "It caters specifically to VIT, Vellore, offering a streamlined way to access and monitor mess menus. It delivers real-time updates and notifications, empowering students and staff to plan meals effectively within campus. ",
+      image: project3,
     },
   ];
 
@@ -41,51 +47,57 @@ const Gallery = () => {
   const blogs = [
     {
       id: 1,
-      title: "Blog Post 1",
+      title: "3D PROCESSORS: A NEW ERA IN WIRELESS COMMUNICATIONS",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      author: "Chandan Kumar",
-      date: "August 22, 2050",
+        "For an extended duration, we have used wires as a mode of communication like in telephone lines or television connections, etc. It provided us with ease of communication and stayed with us for a long time.",
+      author: "Akshita",
+      date: "June 20, 2024",
+      link: "https://medium.com/@vitieeesps/3d-processors-a-new-era-in-wireless-communications-c7b5172c63d1", 
     },
     {
       id: 2,
-      title: "Blog Post 2",
+      title: "Signal Processing: The Secret Weapon in the Fight Against Disease (with Digital Histology).",
       content:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-        author: "Chandan Kumar",
-      date: "August 22, 2050",
+        "The methodology that plays a significant role in the detection of abnormalities in cells of the human body is “histology” (the study of tissues and cells under a microscope).",
+      author: "Ovia Stalin",
+      date: "June 30, 2024",
+      link: "https://medium.com/@vitieeesps/signal-processing-the-secret-weapon-in-the-fight-against-disease-with-digital-histology-7b3b7b7b7b7b", 
     },
     {
       id: 3,
       title: "Blog Post 3",
       content:
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        author: "Chandan Kumar",
-        date: "August 22, 2050",
+      author: "Chandan Kumar",
+      date: "August 22, 2050",
+      link: "http://www.google.com", 
     },
     {
       id: 4,
       title: "Blog Post 4",
       content:
         "Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra.",
-        author: "Chandan Kumar",
-        date: "August 22, 2050",
+      author: "Chandan Kumar",
+      date: "August 22, 2050",
+      link: "http://www.google.com", 
     },
     {
       id: 5,
       title: "Blog Post 5",
       content:
         "Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim.",
-        author: "Chandan Kumar",
-        date: "August 22, 2050",
+      author: "Chandan Kumar",
+      date: "August 22, 2050",
+      link: "http://www.google.com", 
     },
     {
       id: 6,
       title: "Blog Post 6",
       content:
         "Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum.",
-        author: "Chandan Kumar",
-        date: "August 22, 2050",
+      author: "Chandan Kumar",
+      date: "August 22, 2050",
+      link: "http://www.example.org", // Add link for the sixth blog post
     },
   ];
 
@@ -213,7 +225,7 @@ const Gallery = () => {
           {blogs.map((blog) => (
             <div key={blog.id} style={{ marginBottom: "40px", maxWidth: "800px", textAlign: "left" }}>
               <h3 style={{ fontSize: "2rem", marginBottom: "10px", fontWeight: "bold" }}>{blog.title}</h3>
-              <p style={{ fontSize: "1.2rem", lineHeight: "1.6", marginBottom: "10px" }}>{blog.content} <a href="http://www.google.com" style={{ color: "#4CAF50", textDecoration: "underline" }}>Read More</a></p>
+              <p style={{ fontSize: "1.2rem", lineHeight: "1.6", marginBottom: "10px" }}>{blog.content} <a href={blog.link} target="_blank" rel="noopener noreferrer" style={{ color: "#4CAF50", textDecoration: "underline" }}>Read More</a></p>
               <p style={{ fontSize: "1rem", color: "#999", marginBottom: "10px" }}>
                 <strong>{blog.author}</strong> | {blog.date}
               </p>

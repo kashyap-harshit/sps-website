@@ -110,67 +110,49 @@ const AboutUs = () => {
           {/* Testimony 1 */}
           <div className="bg-gray-800 rounded-xl p-6">
             <p className="text-white text-sm">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat."
+              "Joining IEEE-SPS VIT Chapter opened doors to a world of cutting-edge signal processing technologies. The webinars and workshops have been invaluable in deepening my understanding. It's a vibrant community where innovation thrives!"
             </p>
-            <p className="text-gray-400 mt-3">- Doraemon</p>
+            <p className="text-gray-400 mt-3">- Ovia S</p>
           </div>
 
           {/* Testimony 2 */}
           <div className="bg-gray-800 rounded-xl p-6">
             <p className="text-white text-sm">
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum."
+              "Being part of IEEE-SPS VIT Chapter has been transformative. From hands-on sessions to global conferences, every experience has enhanced my skills. It's a platform that fuels both personal growth and professional development."
             </p>
-            <p className="text-gray-400 mt-3">- Nobita Nobi</p>
+            <p className="text-gray-400 mt-3">- Elakshmi Narayanan</p>
           </div>
 
           {/* Testimony 3 */}
           <div className="bg-gray-800 rounded-xl p-6">
             <p className="text-white text-sm">
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum."
+              "IEEE-SPS VIT Chapter isn't just about learning; it's about forging connections. Through this platform, I've collaborated with peers globally, exchanging ideas that push the boundaries of signal processing. Truly inspiring!"
             </p>
-            <p className="text-gray-400 mt-3">- Shizuka Nobi</p>
+            <p className="text-gray-400 mt-3">- Nikil R</p>
           </div>
 
           {/* Testimony 4 */}
           <div className="bg-gray-800 rounded-xl p-6">
             <p className="text-white text-sm">
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum."
+              "The educational events organized by IEEE-SPS VIT Chapter have been instrumental in bridging theory with practical applications. They've equipped me with real-world skills crucial for my career in signal processing. Highly recommended!"
             </p>
-            <p className="text-gray-400 mt-3">- Degi Sugi </p>
+            <p className="text-gray-400 mt-3">- Tanisha Chaudhari </p>
           </div>
 
           {/* Testimony 5 */}
           <div className="bg-gray-800 rounded-xl p-6">
             <p className="text-white text-sm">
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum."
+              "IEEE-SPS VIT Chapter has empowered me to lead and innovate in signal processing. The leadership opportunities and mentorship available have been pivotal in shaping my career trajectory. It's more than a chapter; it's a pathway to success."
             </p>
-            <p className="text-gray-400 mt-3">- Kaminari Uncle</p>
+            <p className="text-gray-400 mt-3">- Utkarsh Rajput</p>
           </div>
 
           {/* Testimony 6 */}
           <div className="bg-gray-800 rounded-xl p-6">
             <p className="text-white text-sm">
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum."
+              "IEEE-SPS VIT Chapter has been pivotal in shaping my academic journey. The chapter's focus on practical projects and hands-on sessions has complemented my coursework, giving me a holistic understanding of signal processing. It's been a game-changer for me!"
             </p>
-            <p className="text-gray-400 mt-3">- Sinchan Nohara</p>
+            <p className="text-gray-400 mt-3">- L.Sai Varshit</p>
           </div>
         </div>
       </motion.div>
